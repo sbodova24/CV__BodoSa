@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;   /* sets the desired behavior to content */
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #2e3158;
+}
+.logoname{
+    color: white;
+}
+.wrapper{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logoname{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width: 45px;
+    background-color: #9195C6;
+    border-radius: 30%;
+    border: 1px solid black;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.logo .logoname{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    background-color:#2e3158;
+}
+
+nav .togglebtn span{
+    display: block;
+    background-color: white;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+    color: white;
+    margin-right: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+.container .picture{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+
+.picture img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.picture img:hover{
+    transform: scale(1.2);
+}
+.text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.text h5{
+    color: white;
+    font-size: 14px;
+}
+.text h5 span{
+    font-size: 16px;
+}
+.text h1{
+    color: #9195C6;
+    font-size: 3rem;
+}
+.text p{
+color: white;
+}
+.btn-cv{
+    margin: 45px 0;
+}
+.btn-cv .btn{
+    border-color: white;
+    color: black;
+    background-color: #9195C6;
+    padding: 12px 25px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.text .social i{
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.text .social i:hover{
+    color: white;
+    transform: scale(2,2);
+}
